@@ -1,6 +1,18 @@
-# Food Hygiene Rating Tracker
+# Food Hygiene Rating Tracker API
 
 Tracks establishments' food hygiene ratings over time.
+
+This is the API part of a two-part system. It does no fetching of data from the FSA itself and merely serves already-fetched data.
+
+1. Part one of the system merely fetches FSA data daily and adds it to a database.
+
+2. Part two of the system (this project) is the API. This serves the DB data sensibly over a REST API.
+
+(3. An archiver saves FSA data to a GitHub repo daily.)
+
+---
+
+## Food Hygiene Rating Tracker
 
 Essentially all it needs to do is capture a snapshot of the variable data of the [UK food hygiene rating data API](https://ratings.food.gov.uk/open-data) every day, then store it in a date-queryable way.
 
