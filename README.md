@@ -4,7 +4,7 @@ Tracks establishments' food hygiene ratings over time.
 
 This is the API part of a two-part system. It does no fetching of data from the FSA itself and merely serves already-fetched data.
 
-1. Part one of the system merely fetches FSA data daily and adds it to a database.
+1. [Part one of the system](https://github.com/lexiflowers/FoodHygieneRatingDataFetcher) merely fetches FSA data daily and adds it to a database.
 
 2. Part two of the system (this project) is the API. This serves the DB data sensibly over a REST API.
 
