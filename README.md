@@ -1,27 +1,9 @@
-# HistoricalFoodHygieneRatings
+# Food Hygiene Rating Tracker
 
-💧 A project built with the Vapor web framework.
+Tracks establishments' food hygiene ratings over time.
 
-## Getting Started
+Essentially all it needs to do is capture a snapshot of the variable data of the [UK food hygiene rating data API](https://ratings.food.gov.uk/open-data) every day, then store it in a date-queryable way.
 
-To build the project using the Swift Package Manager, run the following command in the terminal from the root of the project:
-```bash
-swift build
-```
+Ideally, present the data in a date- and establishment-queryable API; e.g. "show me ratings for establishments within 2 miles of [lat/long] over the past 2 years", or "show me X establishment's historical ratings over the past 5 years".
 
-To run the project and start the server, use the following command:
-```bash
-swift run
-```
-
-To execute tests, use the following command:
-```bash
-swift test
-```
-
-### See more
-
-- [Vapor Website](https://vapor.codes)
-- [Vapor Documentation](https://docs.vapor.codes)
-- [Vapor GitHub](https://github.com/vapor)
-- [Vapor Community maintained packages](https://github.com/vapor-community)
+> It doesn't look like the FSA hosts any historical data currently. Getting this data would be useful. Maybe worth an FOI to FSA.

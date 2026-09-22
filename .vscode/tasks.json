@@ -1,0 +1,58 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "swift-build",
+			"type": "shell",
+			"command": "swift",
+			"args": [
+				"build"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$swiftc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "swift-build-linux-arm64",
+			"type": "shell",
+			"command": "swift",
+			"args": [
+				"build",
+				"--swift-sdk",
+				"swift-6.3.1-RELEASE_static-linux-0.1.0"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$swiftc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "swift-resolve",
+			"type": "shell",
+			"command": "swift",
+			"args": [
+				"package",
+				"resolve"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "swift-test-verify",
+			"type": "shell",
+			"command": "swift",
+			"args": [
+				"test"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$swiftc"
+			],
+			"group": "test"
+		}
+	]
+}

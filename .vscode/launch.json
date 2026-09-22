@@ -1,0 +1,38 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "env": {
+                "DATABASE_HOST": "localhost",
+                "DATABASE_PORT": "5432",
+                "DATABASE_USERNAME": "uwebefe",
+                "DATABASE_PASSWORD": "",
+                "DATABASE_NAME": "historicalFoodHygieneRatings",
+            },
+            "cwd": "${workspaceFolder:HistoricalFoodHygieneRatings}",
+            "name": "Debug HistoricalFoodHygieneRatings",
+            "target": "HistoricalFoodHygieneRatings",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug HistoricalFoodHygieneRatings"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "env": {
+                "DATABASE_HOST": "localhost",
+                "DATABASE_PORT": "5432",
+                "DATABASE_USERNAME": "uwebefe",
+                "DATABASE_PASSWORD": "",
+                "DATABASE_NAME": "scanner_db",
+            },
+            "cwd": "${workspaceFolder:HistoricalFoodHygieneRatings}",
+            "name": "Release HistoricalFoodHygieneRatings",
+            "target": "HistoricalFoodHygieneRatings",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release HistoricalFoodHygieneRatings"
+        }
+    ]
+}
